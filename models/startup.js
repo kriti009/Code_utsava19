@@ -12,7 +12,7 @@ var startupSchema = new mongoose.Schema({
    indus_sec: String,
    estblish_year: String,
    employee_no: Number,
-   certi: String,
+   certi: {data: Buffer, contentType: String},
    website: String,
 
    annualSales: Number,
