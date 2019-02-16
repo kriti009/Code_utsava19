@@ -5,7 +5,7 @@
         <h1>Create Your Startup Profile</h1>
         <p>Create your startup profile to fulfill all your requirements with the help of our listings of investors, lenders, mentors, incubators. Share your startup information here to receive proposals from these counter profiles.</p>
     </div>
-    <form class="needs-validation" novalidate>
+    <form method="POST" action="/starups/new" class="needs-validation" novalidate>
         <h2>Information</h2> 
         <hr>
         <div class="form-group row">
@@ -23,7 +23,8 @@
         <div class="form-group row">     
             <label for="mobileNumber" class="col-sm-5">Mobile Number:</label> 
             <div class="col-sm-7">
-                <input required type="String" class="form-control" id="mobilenumber" name="mobilenumber">
+                <input required type="tel" class="form-control" id="mobilenumber" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required>
             </div>
         </div>
         <div class="form-group row">
@@ -43,72 +44,72 @@
         <div class="form-group row">
             <label for="bt" class="col-sm-5">Buisiness type:</label>
             <div class="col-sm-7">
-                <select class="input required-group form-control" >
+                <select class="input required-group form-control"name="busi_type">
                     <option >Select Buisiness Type</option>
-                    <option name="B2B" value="1">B2B</option>
-                    <option name="B2C" value="5">B2C</option>
-                    <option name="C2C" value="3">C2C</option>
-                    <option name="C2B" value="4">C2B</option>
+                    <option  value="B2B">B2B</option>
+                    <option  value="B2C">B2C</option>
+                    <option  value="C2C">C2C</option>
+                    <option  value="C2B">C2B</option>
                 </select>
             </div>
         </div>
         <div class="form-group row">
             <label for="nature" class="col-sm-5">Nature of Entity:</label>
             <div class="col-sm-7">
-                <select class="input required-group form-control">
+                <select class="input required-group form-control" name="nature">
                     <option >Select Nature of Entity</option>
-                    <option name="proprietorship" value="1">Proprietorship</option>
-                    <option name="partnership" value="5">Partnership</option>
-                    <option name="plimitedc" value="3">Private Limited Company</option>
-                    <option name="pliabilityc" value="4">Private Liability Comapny</option>
-                    <option name="publiclc" value="7">Public Liability Comapny</option>
+                    <option  value="Proprietorship">Proprietorship</option>
+                    <option  value="Partnership">Partnership</option>
+                    <option  value="Private Limited Company">Private Limited Company</option>
+                    <option  value="Private Liability Comapny">Private Liability Comapny</option>
+                    <option  value="Public Liability Comapny">Public Liability Comapny</option>
                 </select>
             </div>
         </div>     
         <div class="form-group row">
             <label for="industrysector" class="col-sm-5">Industry Sector:</label>
             <div class="col-sm-7">
-                <select class="input required-group form-control">
+                <select class="input required-group form-control" name="indus_sec">
                     <option >Select Industry Sector</option>
-                    <option name="edu" value="1">Education</option>
-                    <option name="bhw" value="5">Beauty Health & Wellness</option>
-                    <option name="fb" value="3">Food & Beverage</option>
-                    <option name="tt" value="4">Travel & Tourism</option>
-                    <option name="ee" value="7">Energy & Environment</option>
+                    <option  value="Education">Education</option>
+                    <option  value="Beauty Health & Wellness">Beauty Health & Wellness</option>
+                    <option  value="Food & Beverage">Food & Beverage</option>
+                    <option  value="Travel & Tourism">Travel & Tourism</option>
+                    <option  value="Energy & Environment">Energy & Environment</option>
                 </select>
             </div>
         </div>    
         <div class="form-group row">
             <label for="establishmentyear" class="col-sm-5">Establishment Year:</label>
             <div class="col-sm-7">
-                <select class="input required-group form-control">
+                <select class="input required-group form-control" name="establish_year">
                     <option>Select Establishment Year</option>
-                    <option name="2018" value="2018">2018</option>
-                    <option name="2017" value="2017">2017</option>
-                    <option name="2016" value="2016">2016</option>
-                    <option name="2015" value="2015">2015</option>
-                    <option name="2014" value="2014">2014</option>
+                    <option  value="2018">2018</option>
+                    <option  value="2017">2017</option>
+                    <option  value="2016">2016</option>
+                    <option  value="2015">2015</option>
+                    <option  value="2014">2014</option>
                 </select>
             </div>
         </div>
         <div class="form-group row">
             <label for="numofemp" class="col-sm-5">Number of Employees:</label>
             <div class="col-sm-7">
-                <select class="input required-group form-control">
+                <select class="input required-group form-control" name="employ_no">
                     <option>Select Number of Employees</option>
-                    <option name="less" value="1">less than 10</option>
-                    <option name="10" value="2">10-50</option>
-                    <option name="50" value="3">50-100</option>
-                    <option name="100" value="4">100-500</option>
-                    <option name="500" value="5">500-1000</option>
-                    <option name="more" value="6">more than 1000</option>
+                    <option  value="less than 10">less than 10</option>
+                    <option  value="10-50">10-50</option>
+                    <option  value="50-100">50-100</option>
+                    <option  value="100-500">100-500</option>
+                    <option  value="500-1000">500-1000</option>
+                    <option  value="more than 1000">more than 1000</option>
                 </select>
             </div>
         </div>     
         <div class="form-group row">
             <label for="certification" class="col-sm-5 col-form-label">Certification of incorporation:</label>
             <div class="col-sm-7">
-                    <input name="certification" required class="form-control-file" id="certification" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
+                    <input name="certification" required class="form-control-file" id="certi" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
             </div>
         </div>    
         <div class="form-group row">

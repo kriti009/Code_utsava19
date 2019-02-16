@@ -6,6 +6,7 @@ var passport = require("passport");
 var localStrategy = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose");
 var methodOverride = require("method-override");
+var fs = require("fs");
 // var GoogleStrategy = require("passport-google-oauth20").Strategy;
 //requiring routes
 var investorRoutes = require("./routes/investors");
@@ -92,6 +93,6 @@ app.get("/", function(req, res){
  app.get("*", function(req, res){
 	res.send("PAGE NOT FOUND!!");
 });
-app.listen(3000, function(){
+app.listen(process.env.PORT || 8000,function(){
     console.log("Server Connected!!");
 });
