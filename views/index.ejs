@@ -20,5 +20,16 @@
         <a href="/logout">Logout</a>
     </div>
 <% } %>
+<div>
+    <a href="/investors/new">Register for inventors</a>
+</div>
+
+<h3>Invextors name</h3>
+<div>
+    <% investor.forEach(function(inves){ %>
+        <li><%= inves.name %></li>
+    <% }); %>
+</div>
+
     
 

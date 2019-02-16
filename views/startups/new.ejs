@@ -1,0 +1,294 @@
+<% include ../partials/header.ejs %>
+
+<div class="container container1">
+    <div class="jumbotron">
+        <h1>Create Your Startup Profile</h1>
+        <p>Create your startup profile to fulfill all your requirements with the help of our listings of investors, lenders, mentors, incubators. Share your startup information here to receive proposals from these counter profiles.</p>
+    </div>
+    <form class="needs-validation" novalidate>
+        <h2>Information</h2> 
+        <hr>
+        <div class="form-group row">
+            <label for="name" class="col-sm-5">Name :</label>
+            <div class="col-sm-7">
+                <input required type="email" class="form-control" id="name" name="name">    
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="designation" class="col-sm-5">Designation : </label>
+            <div class="col-sm-7">
+                <input required type="text" class="form-control" id="designation" name="designation">
+            </div>
+        </div>    
+        <div class="form-group row">     
+            <label for="mobileNumber" class="col-sm-5">Mobile Number:</label> 
+            <div class="col-sm-7">
+                <input required type="String" class="form-control" id="mobilenumber" name="mobilenumber">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-sm-5">Email:</label>
+            <div class="col-sm-7">
+                <input required type="email" placeholder="abc@hotmail.com" class="form-control" id="email" name="email">
+            </div>
+        </div>                    
+        <br>Company Information
+        <hr>
+        <div class="form-group row">
+            <label for="entity" class="col-sm-5">Name of the Entity:</label>
+            <div class="col-sm-7">
+                <input required type="text" class="form-control" id="entity" name="entity">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="bt" class="col-sm-5">Buisiness type:</label>
+            <div class="col-sm-7">
+                <select class="input required-group form-control" >
+                    <option >Select Buisiness Type</option>
+                    <option name="B2B" value="1">B2B</option>
+                    <option name="B2C" value="5">B2C</option>
+                    <option name="C2C" value="3">C2C</option>
+                    <option name="C2B" value="4">C2B</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="nature" class="col-sm-5">Nature of Entity:</label>
+            <div class="col-sm-7">
+                <select class="input required-group form-control">
+                    <option >Select Nature of Entity</option>
+                    <option name="proprietorship" value="1">Proprietorship</option>
+                    <option name="partnership" value="5">Partnership</option>
+                    <option name="plimitedc" value="3">Private Limited Company</option>
+                    <option name="pliabilityc" value="4">Private Liability Comapny</option>
+                    <option name="publiclc" value="7">Public Liability Comapny</option>
+                </select>
+            </div>
+        </div>     
+        <div class="form-group row">
+            <label for="industrysector" class="col-sm-5">Industry Sector:</label>
+            <div class="col-sm-7">
+                <select class="input required-group form-control">
+                    <option >Select Industry Sector</option>
+                    <option name="edu" value="1">Education</option>
+                    <option name="bhw" value="5">Beauty Health & Wellness</option>
+                    <option name="fb" value="3">Food & Beverage</option>
+                    <option name="tt" value="4">Travel & Tourism</option>
+                    <option name="ee" value="7">Energy & Environment</option>
+                </select>
+            </div>
+        </div>    
+        <div class="form-group row">
+            <label for="establishmentyear" class="col-sm-5">Establishment Year:</label>
+            <div class="col-sm-7">
+                <select class="input required-group form-control">
+                    <option>Select Establishment Year</option>
+                    <option name="2018" value="2018">2018</option>
+                    <option name="2017" value="2017">2017</option>
+                    <option name="2016" value="2016">2016</option>
+                    <option name="2015" value="2015">2015</option>
+                    <option name="2014" value="2014">2014</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="numofemp" class="col-sm-5">Number of Employees:</label>
+            <div class="col-sm-7">
+                <select class="input required-group form-control">
+                    <option>Select Number of Employees</option>
+                    <option name="less" value="1">less than 10</option>
+                    <option name="10" value="2">10-50</option>
+                    <option name="50" value="3">50-100</option>
+                    <option name="100" value="4">100-500</option>
+                    <option name="500" value="5">500-1000</option>
+                    <option name="more" value="6">more than 1000</option>
+                </select>
+            </div>
+        </div>     
+        <div class="form-group row">
+            <label for="certification" class="col-sm-5 col-form-label">Certification of incorporation:</label>
+            <div class="col-sm-7">
+                    <input name="certification" required class="form-control-file" id="certification" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
+            </div>
+        </div>    
+        <div class="form-group row">
+            <label for="website" class="col-sm-5">Website:</label>
+            <div class="col-sm-7">
+                <input name="website" required type="url" id="website" class="form-control" placeholder="Enter website URL">
+            </div>
+        </div>     
+            
+        <br>Financial Deatials 
+        <hr>
+        <div class="container">
+            <div class="col-sm-4">
+                Annual Sales: <input required name="annualSales">
+            </div>
+            <div class="col-sm-4">
+                Gross Income: <input required name="grossIncome">
+            </div>
+            <div class="col-sm-4">
+                Rentals: <input required name="rentals">
+            </div>
+        </div>
+        <br>   
+        Social Media Links: 
+        <hr>
+        <div class="input required-group-text col-sm-4" >
+            <i class="fa fa-facebook-square">
+                <input required class="form-control col-auto" name="facebook">
+            </i>
+        </div>
+        <div class="input required-group-text col-sm-4">
+            <i class="fa fa-twitter">
+                <input required class="form-control col-auto" name="twitter">
+            </i>
+        </div>
+        <div class="input required-group-text col-sm-4">
+            <i class="fa fa-linkedin-square">
+                <input required class="form-control col-auto" name="linkedIn">
+            </i>
+        </div>
+        
+        <br>Headquarters/Locatiion
+        <hr>
+        <div class="form-group row">
+            <label for="address" class="col-sm-5"> Address:</label>
+            <div class="input required-group col-sm-7">
+                <textarea name="address" class=" form-control" rows="3" placeholder="Enter Office Address"></textarea>
+            </div>
+        </div>
+            
+            
+        <div class="form-group row">
+            <label for="city" class="col-sm-5">City:</label>
+            <div class="col-sm-7">
+                <input name="city" required type="text" class="form-control" placeholder="Enter the city">
+            </div>
+        </div>    
+        <div class="form-group row"> 
+            <label for="pinCode" class="col-sm-5">Pin Code:</label>
+            <div class="col-sm-7">
+                <input name="pinCode" required type="number" class="form-control">
+            </div>   
+        </div>    
+        
+        <br>Director / CEO / Owner Information
+        <hr>
+        <div class="form-group row"> 
+            <label for="Oname" class="col-sm-5">Name:</label>
+            <div class="col-sm-7">
+                <input name="Oname" required type="text" class="form-control" placeholder="Enter Your Name">
+            </div>   
+        </div> 
+        <div class="form-group row"> 
+            <label for="Oemail" class="col-sm-5">Email ID:</label>
+            <div class="col-sm-7">
+                <input name="Oemail" required type="email" class="form-control" placeholder="Enter Your Email">
+            </div>   
+        </div>      
+        <div class="form-group row"> 
+            <label for="Odesig" class="col-sm-5">Designation:</label>
+            <div class="col-sm-7">
+                <input name="Odesig" required type="email" class="form-control" placeholder="Enter Your Designation">
+            </div>   
+        </div>        
+            
+        
+        <br>Buisiness / Plan
+        <hr>
+        <div class="form-group row">
+            <label for="companystage" class="col-sm-5">Select your Company stage:</label>
+            <div class="col-sm-7">
+                <select class="input required-group form-control">
+                    <option>Select your Company Stage</option>
+                    <option name="notSet" value="1">Not Set</option>
+                    <option name="concept" value="2">Concept Stage</option>
+                    <option name="phase" value="3">Development Phase</option>
+                    <option name="prototype" value="4">Prototype Ready</option>
+                    <option name="estab" value="5">Full Buisiness Established</option>
+                    
+                </select>
+            </div>
+        </div>     
+        
+        <div class="form-group row">
+            <label for="problemsolution" class="col-sm-5"> Customer Problem & Solution:</label>
+            <div class="input required-group col-sm-7">
+                <textarea class=" form-control" rows="3" placeholder="Describe the customer problem that your startup will solve"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="problemsolution" class="col-sm-5"> Start-ups Product / Service:</label>
+            <div class="input required-group col-sm-7">
+                <textarea class=" form-control" rows="3" placeholder="Describe the product or service of the startup"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="problemsolution" class="col-sm-5"> Target Customer Segment:</label>
+            <div class="input required-group col-sm-7">
+                <textarea class=" form-control" rows="3" placeholder="Describe your target customer segment"></textarea>
+            </div>
+        </div>    
+            
+        <div class="form-group row">
+            <label class="col-sm-5">Investment Amount:</label>
+            <div class="col-sm-7">
+                <input name="investmentAmount" required type="number" class="form-control">
+            </div>
+        </div>     
+        <div class="form-group row">
+            <label class="col-sm-5">Company Summary:</label>
+            <div class="col-sm-7">
+                <textarea rows="5" class="form-control" placeholder="Enter the Company Summary"></textarea>
+            </div>
+        </div>    
+                
+            
+            <br>Buisiness Requirements 
+            <hr>
+            I am looking for :
+            <div class="form-group form-check">
+                <label class="col-auto">
+                    <input required type="checkbox"class="form-check-input required">Investors
+                </label>
+                <label class="col-auto">
+                    <input required type="checkbox"class="form-check-input required">Mentorship for my startup
+                </label>
+                <label class="col-auto">
+                    <input required type="checkbox"class="form-check-input required">Loan for my startup
+                </label>
+                <label class="col-auto">
+                    <input required type="checkbox"class="form-check-input required">Incubators
+                </label>
+            </div>
+            <div class="form-group row">
+                <label for="buisinessDocuments" class="col-sm-5">Buisiness Documents</label>
+            </div>
+            <div class="col-sm-7">
+                    <input name="certification" required class="form-control-file" id="certification" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
+            </div>
+            <div class="col-sm-7">
+                    <input name="certification" required class="form-control-file" id="certification" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
+            </div>
+            <div class="col-sm-7">
+                    <input name="certification" required class="form-control-file" id="certification" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
+            </div>
+            <div class="col-sm-7">
+                    <input name="certification" required class="form-control-file" id="certification" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
+            </div>
+            <div class="col-sm-7">
+                    <input name="certification" required class="form-control-file" id="certification" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
+            </div>
+            <div class="col-sm-7">
+                    <input name="certification" required class="form-control-file" id="certification" type="file" placeholder="Accepted formats-png,jpeg,pdf" >
+            </div>
+            <div class="terms text-center col-sm-12">By Clicking Submit you are Accepting
+                    <a routerlink="/terms" href="terms.html">Terms &amp; Conditions</a>
+            </div>
+            <div class="container ">
+                <input type="submit" name="submit" value="submit" class="btn btn-primary center-block btn-lg" id="singlebutton">
+            </div>   
+    </form>
+</div>
+<% include ../partials/footer.ejs %>

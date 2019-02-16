@@ -1,0 +1,90 @@
+<% include ../partials/header.ejs %>
+<!-- <form method="POST" action="/investors/new">
+    <input type="text" name="name" placeholder="name">
+    <input type="submit">
+</form> -->
+<div class="container">
+    <div class="jumbotron">
+      <h1>Create your Investor Profile</h1>
+        <p>Create your investor profile and surf through our listings of startups and businesses from all across India in multiple industries to invest into or buy completely. Fill in your investment preferences for suitable businesses and startups to connect with you</p>
+    </div>
+    <div class="col-lg-12 m-auto d-block">
+        <h4><u>Confidential Informtion</u></h4></br>
+        <form method="POST" action="/investors/new" class="bg-light" onsubmit="return validation()">
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label>Your Name<font color="red">*</font> :</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="name" class="form-control" id="name">
+                    <span id="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <labe>Mobile Number:<font color="red">*</font> :</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="mobile" class="form-control" id="mobile">
+                    <span id="Mobile" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <labe>Email Id:<font color="red">*</font> :</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="mail" class="form-control" id="email">
+                    <span id="mail" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label>Location:<font color="red">*</font> :</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="loc" class="form-control" id="location">
+                    <span id="loc" class="text-danger"></span>
+                </div>
+            </div>
+            <h4><u>Company Details</u></h4></br>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="intro">Introduction:</label>
+                </div>
+                <div class="col-sm-4">
+                    <textarea class="form-control" name="intro" id="intro" rows="3"></textarea>
+                </div>
+            </div>
+            <h4><u>Profile details:</u></h4></br>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label>Investment Type:<font color="red">*</font> :</label>
+                </div>
+                <div class="col-sm-4">
+                    <select class="form-control ng-pristine ng-invalid ng-touched" id="investortype" name="inv_type" ngmodel="" required="">
+                                                            <option disabled="" hidden="" selected="" value="">Select Investor Type</option>
+                                                            <!----><option value="2">Individual Investor</option><option value="1">Investment Firm</option>
+                    </select>
+                    <span id="inv" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label>Investment Capacity:<font color="red">*</font> :</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="invcap" class="form-control" id="capacity">
+                    <span id="cap" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="terms text-center">By Clicking Submit you are Accepting
+                <a routerlink="/terms" href="terms.html">Terms &amp; Conditions</a>
+            </div></br>
+            <div class="container">
+                <input type="submit" name="submit" value="submit" class="btn btn-primary center-block btn-lg" id="singlebutton">
+            </div>
+        </form>
+</div>
+    <script src = "./js/inventor_new.js"></script>
+<% include ../partials/footer.ejs %>

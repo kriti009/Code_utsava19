@@ -8,7 +8,13 @@ var passportLocalMongoose = require("passport-local-mongoose");
 var methodOverride = require("method-override");
 // var GoogleStrategy = require("passport-google-oauth20").Strategy;
 //requiring routes
+var investorRoutes = require("./routes/investors");
+var userRoutes = require("./routes/users");
+var startupRoutes = require("./routes/startups");
+//requiring models
 var User = require("./models/user");
+var Startup = require("./models/startup");
+var Investor = require("./models/investors");
 // var passportFacebook = require('./auth/facebook');
 var jsonParser = bodyParser.json();
 // mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true});
@@ -67,42 +73,23 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 //routes------------------------
 app.get("/", function(req, res){
-	res.render("index");
+    Investor.find({}, function(err, allInvestor){
+        if(err){
+           console.log(err);
+        }else{
+           res.render("index", {investor: allInvestor, currentUser: req.user});      
+        }
+     });
 });
-//login signup routes------
-app.get("/register", function(req, res){
-    res.render("register");
-});
-app.post("/register",urlencodedParser , function(req, res){
-    var newUser = new User({username: req.body.username});
-    User.register(newUser, req.body.password, function(err, user){
-       if(err){
-          return res.redirect("register");
-       }else{
-            passport.authenticate("local")(req, res, function(){
-              console.log(req.body.username);
-             res.redirect("/");
-          });
-       }
-    }); 
-});
-app.get("/login", function(req,res){
-    res.render("login");
-});
-app.post("/login", passport.authenticate("local", {
-    successRedirect: "/",
-    failureRedirect: "/login"
- }),function(req, res){
- });
-app.get("/logout", function(req, res){
-    req.logout();
-    res.redirect("/");
- });
-//  app.get("/new/investor", function(req, res){
-//     res.render("")
-//  })
 
-app.get("*", function(req, res){
+
+//routes
+ app.use("/", investorRoutes);
+ app.use("/", userRoutes);
+ app.use("/", startupRoutes);
+
+
+ app.get("*", function(req, res){
 	res.send("PAGE NOT FOUND!!");
 });
 app.listen(3000, function(){
