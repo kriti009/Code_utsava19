@@ -3,6 +3,26 @@ var Investor = require("../models/investors");
 var router = express.Router();
 
 //new 
+router.get("/investors", function(req, res){
+   Investor.find({}, function(err, investor){
+      if(err){
+         console.log(err);
+      }else{
+         res.render("./investors/index", {investor: investor, currentUser: req.user});      
+      }
+   });
+});
+
+router.get("/investors/:id", function(req, res){
+   Investor.findById(req.params.id , function(err, foundInvestor){
+      if(err){
+         console.log(err);
+      }else{
+         console.log(req.params.id);
+         res.render("investors/show", {investor: foundInvestor});
+      }
+   });
+});
 router.get("/investors/new", function(req, res){
     res.render("investors/new");
  });
