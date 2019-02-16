@@ -1,0 +1,19 @@
+
+<div class="row text-center" style="display:flex; flex-wrap:wrap">
+        <% investor.forEach(function(inves){ %>
+            <div class="col col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <div class="caption">    
+                        <h4><%= inves.name %></h4>
+                        <h4><%= inves.mobile %></h4>
+                        <h4><%= inves.loc %></h4>
+                    </div>
+                    <p>
+                        <a class="btn btn-primary" href="/investors/<%= inves._id %>">
+                            More Info
+                        </a>
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+</div>
