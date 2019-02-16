@@ -7,6 +7,7 @@ var investorSchema = new mongoose.Schema({
    mail: String,
    loc: String,
    intro: String,
+   ad_headline: String,
    inv_type: String,
     invcap : String
 //    author: {

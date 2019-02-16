@@ -2,7 +2,7 @@
 
 <div class="container">
 <div class="jumbotron">
-  <h2>Interested to invest in businesses like wellness, travel, IT or electronics</h2>
+  <h2><%= investor.ad_headline %></h2>
 
 
 </div>
@@ -17,12 +17,15 @@
       </div> -->
   </div>
 <h4><b>Name, Mobile, Company Logo, Profile Picture, Email</b></h4>
-<p>Available after Interaction</p><br>
-<h4><b>Location :</b></h4><br>
-<h4><b>Investor type :</b></h4><br>
-<h4><b>Name of Company :</b></h4><br>
-<h4><b>Introduction of Company :</b></h4><br>
-<h4><b> Investment capacity:</b></h4><br>
+<p><i class="fas fa-lock" style="color: blue"></i> Available after Interaction</p><br>
+<!-- <h4><b>Location :</b></h4><br> -->
+<h4>
+  <b>Investor type : </b><%= investor.inv_type %>   |  <i class="fa fa-map-marker" style="color: blue"></i> <%= investor.loc %>, India  
+</h4><br>
+<h4><b>Designation :</b> Owner</h4><br>
+<h4><b>Company Name :</b>     <%= investor.name %></h4><br>
+<h4><b>Introduction of Company : </b><%= investor.intro %></h4><br>
+<h4><b> Investment capacity :  </b><%= investor.invcap %></h4><br>
 
 
 </div>
