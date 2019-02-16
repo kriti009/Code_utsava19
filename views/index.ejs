@@ -1,0 +1,24 @@
+<% if(!currentUser){ %>
+    <h3>Login </h3>
+    <div>
+        <a href="/login">Login</a>
+    </div>
+    <div>
+        <a href="/facebook">Login using fb</a>
+    </div>
+    <div>
+        <a href="#">login using google</a>
+    </div>
+    <div>
+        <a href="#">login using linkeedin</a>
+    </div>
+    <div>
+        <a href="/register">Register</a>
+    </div>
+<% }else{ %>
+    <div>
+        <a href="/logout">Logout</a>
+    </div>
+<% } %>
+    
+
