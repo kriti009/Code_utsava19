@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 //Schema Setup
-var investorSchema = new mongoose.Schema({
+var mentorSchema = new mongoose.Schema({
     name: String,
     mobile: String,
 //    image: String,
@@ -30,6 +30,6 @@ var investorSchema = new mongoose.Schema({
 //          }
 //       ]
 });
-var Investor = mongoose.model("Investor", investorSchema);
+var Mentor = mongoose.model("Mentor", mentorSchema);
 // below line use to return value
-module.exports = Investor;
+module.exports = Mentor;
