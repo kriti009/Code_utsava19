@@ -1,0 +1,20 @@
+
+<div class="row text-center" style="display:flex; flex-wrap:wrap">
+        <% startup.forEach(function(startup){ %>
+            <div class="col col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <div class="caption">    
+                        <h4><%= startup.name %></h4>
+                        <h4><%= startup.designation %></h4>
+                        <h4><%= startup.mobile %></h4>
+                        <h4><%= startup.loc %></h4>
+                    </div>
+                    <p>
+                        <a class="btn btn-primary" href="/startups/<%= startup._id %>">
+                            More Info
+                        </a>
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+</div>

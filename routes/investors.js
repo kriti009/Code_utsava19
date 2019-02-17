@@ -31,7 +31,7 @@ router.post("/investors/new",function(req, res){
         console.log(err);
      }else{
          console.log(newlyCreatedinvestor.name);
-        res.redirect("/");      
+        res.redirect("/investors");      
      }
   });
 });

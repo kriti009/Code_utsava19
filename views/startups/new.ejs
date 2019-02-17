@@ -33,7 +33,24 @@
                 <input required type="email" placeholder="abc@hotmail.com" class="form-control" id="email" name="email">
             </div>
         </div>                    
-        <br>Company Information
+        <br><h2>Adverisement details</h2>
+        <hr>
+        <div class="form-group row">
+                <label for="ad_headline" class="col-sm-5"> Advertisement Headline:</label>
+                <div class="input required-group col-sm-7">
+                    <textarea class=" form-control" rows="3" placeholder="Enter Advertisement Headline"></textarea>
+                </div>
+        </div>      
+        <div class="form-group row">
+                <label for="intro" class="col-sm-5"> Introduction:</label>
+                <div class="input required-group col-sm-7">
+                    <textarea class=" form-control" rows="3" placeholder="Introduction about your Idea"></textarea>
+                </div>
+        </div>      
+        
+        
+
+        <br><h2>Company Information</h2>
         <hr>
         <div class="form-group row">
             <label for="entity" class="col-sm-5">Name of the Entity:</label>
@@ -80,10 +97,9 @@
             </div>
         </div>    
         <div class="form-group row">
-            <label for="establishmentyear" class="col-sm-5">Establishment Year:</label>
+            <label for="establish_year" class="col-sm-5">Establishment Year:</label>
             <div class="col-sm-7">
                 <select class="input required-group form-control" name="establish_year">
-                    <option>Select Establishment Year</option>
                     <option  value="2018">2018</option>
                     <option  value="2017">2017</option>
                     <option  value="2016">2016</option>
@@ -93,10 +109,9 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="numofemp" class="col-sm-5">Number of Employees:</label>
+            <label for="employee_no" class="col-sm-5">Number of Employees:</label>
             <div class="col-sm-7">
-                <select class="input required-group form-control" name="employ_no">
-                    <option>Select Number of Employees</option>
+                <select class="input required-group form-control" name="employee_no">
                     <option  value="less than 10">less than 10</option>
                     <option  value="10-50">10-50</option>
                     <option  value="50-100">50-100</option>
@@ -179,17 +194,17 @@
         <div class="form-group row"> 
             <label for="Oname" class="col-sm-5">Name:</label>
             <div class="col-sm-7">
-                <input name="Oname" required type="text" class="form-control" placeholder="Enter Your Name">
+                <input name="OName" required type="text" class="form-control" placeholder="Enter Your Name">
             </div>   
         </div> 
         <div class="form-group row"> 
-            <label for="Oemail" class="col-sm-5">Email ID:</label>
+            <label for="OEmail" class="col-sm-5">Email ID:</label>
             <div class="col-sm-7">
                 <input name="Oemail" required type="email" class="form-control" placeholder="Enter Your Email">
             </div>   
         </div>      
         <div class="form-group row"> 
-            <label for="Odesig" class="col-sm-5">Designation:</label>
+            <label for="Odesignation" class="col-sm-5">Designation:</label>
             <div class="col-sm-7">
                 <input name="Odesig" required type="email" class="form-control" placeholder="Enter Your Designation">
             </div>   
