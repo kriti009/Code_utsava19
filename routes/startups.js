@@ -30,7 +30,7 @@ router.post("/starups/new",function(req, res){
         busi_type: req.body.busi_type,
         nature: req.body.nature,
         indus_sec: req.body.indus_sec,
-        establish_year: req.body.estblish_year,
+        establish_year: req.body.establish_year,
         employee_no: req.body.employee_no,
         certi: req.body.certi,
         website: req.body.website,
@@ -47,7 +47,7 @@ router.post("/starups/new",function(req, res){
         pinCode: req.body.pinCode,
         oName: req.body.oName,
         oEmail: req.body.oEmail,
-        odesignation: req.body.odesignation
+        oDesignation: req.body.oDesignation
      };
      Startup.create(newStartup, function(err, newlyCreatedStartup){
        if(err){
