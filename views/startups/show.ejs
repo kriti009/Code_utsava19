@@ -1,9 +1,10 @@
 <% include ../partials/header.ejs %>
-<div class="container">
+<div class="companyTitle"><b><h1>COMPANY NAME</h1></b></div>
+<div class="container" style="border:3px black solid; padding:5%; box-shadow: 10px 10px 8px #888888;">
         <!-- ------------------------navigation bar--------------------------- -->
-        <div class="jumbotron">
-            <div class="companyTitle"><h1>COMPANY NAME</h1> </div>
-        </div>
+
+
+
         <div class="nav nav-pills nav-fills sticky-top navbar-container justify-content-end" style="padding: 2%; background-color: #ddccff;">
             <li class="nav-item">
                 <a class="nav-link " href="#">Home</a>
@@ -20,38 +21,35 @@
         </div>
 
         <!-- ---------------------company logo----------------------------- -->
-        <div class="row" style="padding: 5%">
-            <div class="col-md-3id="logospace">
-                <img alt="Comapany Logo" src="data:image/png;base64,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">
-                        
-                </div>
-                <div class="col-md-9" id="pro" >
-                    <h4>Company Information</h3>
+
+
+
+                    <h3>Company Information</h3>
                     <hr>
-                    <div>Name of the Entity: </div>
-                    <div>Buisiness Type:</div>
-                    <div>Nature of Entity: </div>
-                    <div>Industry Sector: </div>
-                    <div>Establishment Year: </div>
-                    <div>Number of Employees: </div>
-                    <div>Website</div>
+                    <div>Name of the Entity: <%= startup.entity %></div>
+                    <div>Buisiness Type: <%= startup.busi_type %></div>
+                    <div>Nature of Entity:  <%= startup.nature %></div>
+                    <div>Industry Sector:  <%= startup.indus_sec %></div>
+                    <div>Establishment Year:  <%= startup.establish_year %></div>
+                    <div>Number of Employees: <%= startup.employee_no %></div>
+                    <div>Website: <%= startup.website %></div>
                     <hr>
                     <h4>Financial Details</h4>
                     <hr>
-                    <div>Annual Sales: </div>
-                    <div>Gross Income: </div>
-                    <div>Rentals: </div>
+                    <div>Annual Sales: <%= startup.annualSales %></div>
+                    <div>Gross Income: <%= startup.grossIncome %></div>
+                    <div>Rentals: <%= startup.rentals %></div>
                     <hr>
                     <h4>Director/CEO/Owner Information</h4>
                     <hr>
-                    <div>Name: </div>
-                    <div>Email ID: </div>
-                    <div>Designation</div>
+                    <div>Name: <%= startup.oName %></div>
+                    <div>Email ID: <%= startup.oEmail %></div>
+                    <div>Designation: <%= startup.odesignation %></div>
                     <h4>Buisiness Plan</h4>
                     <div>Comapany Stage: </div>
-                </div>
+
         </div>
-        
+
         <!-- ---------------------company documents--------------------------- -->
         <div class="row" style="padding: 15%" id="docs">
             <h3>Company Documents</h3>
@@ -61,7 +59,7 @@
         <!-- ---------------------milestone tracking--------------------------- -->
         <div class="container" id="tracking" style="padding: 15%">
             <h3>MILESTONE TRACKING</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium deleniti labore harum libero culpa repellendus ipsum ad optio hic odit officia earum enim sit, magnam mollitia illo blanditiis molestiae.</p> 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium deleniti labore harum libero culpa repellendus ipsum ad optio hic odit officia earum enim sit, magnam mollitia illo blanditiis molestiae.</p>
         </div>
 
         <!-- -----------------------contact-------------------------------------- -->
@@ -83,11 +81,11 @@
                     </div>
                 </div>
             </div>
-        
-            
-            
+
+
+
         </div>
-        
+
     </div>
 
     <% include ../partials/footer.ejs %>

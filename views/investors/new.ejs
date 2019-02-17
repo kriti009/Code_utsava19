@@ -9,7 +9,7 @@
         <p>Create your investor profile and surf through our listings of startups and businesses from all across India in multiple industries to invest into or buy completely. Fill in your investment preferences for suitable businesses and startups to connect with you</p>
     </div>
     <div class="col-lg-12 m-auto d-block">
-        <h4><u>Confidential Informtion</u></h4></br>
+        <h4><u>Confidential Informtion</u></h4><br>
         <form method="POST" action="/investors/new" class="bg-light" onsubmit="return validation()">
             <div class="form-group row">
                 <div class="col-sm-2">
@@ -47,7 +47,15 @@
                     <span id="loc" class="text-danger"></span>
                 </div>
             </div>
-            <h4><u>Company Details</u></h4></br>
+            <h4><u>Advertisement Details</u></h4></br>
+            <div class="form-group row">
+                    <div class="col-sm-2">
+                        <label for="ad_headline">Advertisement Headline:</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <textarea class="form-control" name="ad_headline" id="ad_headline" rows="3"></textarea>
+                    </div>
+                </div>
             <div class="form-group row">
                 <div class="col-sm-2">
                     <label for="intro">Introduction:</label>
@@ -83,7 +91,11 @@
                 <a routerlink="/terms" href="terms.html">Terms &amp; Conditions</a>
             </div></br>
             <div class="container">
-                <input type="submit" name="submit" value="submit" class="btn btn-primary center-block btn-lg" id="singlebutton">
+
+          <input type="submit" name="submit" value="Contact Investor" style="padding-left:8%; padding-right:8%" class="btn btn-primary btn-lg"><br>
+
+
+
             </div>
         </form>
 </div>

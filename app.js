@@ -12,10 +12,12 @@ var fs = require("fs");
 var investorRoutes = require("./routes/investors");
 var userRoutes = require("./routes/users");
 var startupRoutes = require("./routes/startups");
+var mentorRoutes = require("./routes/mentors");
 //requiring models
 var User = require("./models/user");
 var Startup = require("./models/startup");
 var Investor = require("./models/investors");
+var Mentor = require("./models/mentors");
 // var passportFacebook = require('./auth/facebook');
 var jsonParser = bodyParser.json();
 // mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true});
@@ -88,6 +90,7 @@ app.get("/", function(req, res){
  app.use("/", investorRoutes);
  app.use("/", userRoutes);
  app.use("/", startupRoutes);
+ app.use("/", mentorRoutes);
 
 
  app.get("*", function(req, res){

@@ -5,13 +5,15 @@ var startupSchema = new mongoose.Schema({
    designation: String,
    mobile: String,
    email: String,
+   intro: String,
+   ad_headline: String,
 //    image: String,
    entity: String,
    busi_type: String,
    nature: String,
    indus_sec: String,
-   estblish_year: String,
-   employee_no: Number,
+   establish_year: String,
+   employee_no: String,
    certi: {data: Buffer, contentType: String},
    website: String,
 
@@ -25,10 +27,9 @@ var startupSchema = new mongoose.Schema({
    address: String,
    city: String,
    pinCode: Number,
-
    oName: String,
    oEmail: String,
-   odesignation: String
+   oDesignation: String
 
 });
 var Startup = mongoose.model("Startup", startupSchema);
