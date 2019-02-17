@@ -1,9 +1,11 @@
 <% include ../partials/header.ejs %>
 
 <div class="container">
+  <div class="row" >
+  <div class="col-sm-7" style="border:0px; box-shadow: 10px 10px 8px #888888;">
     <h2><b><%= mentor.ad_headline %></b></h2><br>
-    <div class="row" style="border:3px black solid; padding:5%; box-shadow: 10px 10px 8px #888888;">
-      <div class="col-sm-7">
+    <hr>
+
         <!-- <div class="shrt-desc tp-border Platinum">
           <div class="investor-tag" >
             <img src="https://i.ytimg.com/vi/xgULq4ZmXg8/maxresdefault.jpg" alt="Investor-Tag" style="width:100px;height:40px;">
@@ -13,7 +15,7 @@
         <p><i class="fas fa-lock" style="color: blue"></i> Available after Interaction</p><br>
         <h4>
           <b>
-            Company Name : 
+            Company Name :
           </b>
           <%= mentor.com %>  |  <i class="fa fa-map-marker" style="color: blue"></i> <%= mentor.loc %>, India
         </h4><br>
@@ -37,52 +39,46 @@
         </h4><br>
 
       </div>
-      <div class="col-sm-5" style="background-color:lavenderblush;">
+      <div class="col-sm-4" style="background-color:Azure; margin-left:10px;">
         <div class="container">
-          <h2 style="padding-left:8%">Contact Mentor</h2><br>
+          <h2 style="padding-left:4%"><b>Contact Mentors</b></h2><br>
           <div class="form group row">
+          <div class="col-sm-1">
+            <label>Designation:</label></div>
             <div class="col-sm-2">
-              <label>Designation <font color="red">*</font> :</label>
-            </div>
-            <div class="col-sm-2">
-              <input type="text" name="user" class="form-control" id="user"></div>
+            <input type="text" name="user" class="form-control" id="user"></div>
             </div>
             <br>
-            <div class="form group row">
+          <div class="form group row">
+            <div class="col-sm-1">
+              <label>Mobile:</label></div>
               <div class="col-sm-2">
-                <label>Mobile<font color="red">*</font> :</label>
-              </div>
-              <div class="col-sm-2">
-                <input type="text" name="user" class="form-control" id="user">
-              </div>
-            </div>  <br>
-            <div class="form group row">
-              <div class="col-sm-2">
-                <label>Email <font color="red">*</font> :</label>
-              </div>
-              <div class="col-sm-2">
-                <input type="text" name="user" class="form-control" id="user">
-              </div>
-            </div>  <br>
-            <div class="form group row">
-              <div class="col-sm-2">
-                <label>Company <font color="red">*</font> :</label>
-              </div>
-              <div class="col-sm-2">
-                <input type="text" name="user" class="form-control" id="user">
-              </div>
-            </div>  <br>
-            <div class="form group row">
-              <div class="col-sm-2">
-                <label>Profile Type <font color="red">*</font> :</label>
-              </div>
-              <div class="col-sm-2">
-                <input type="text" name="user" class="form-control" id="user">
-              </div>
-            </div>  <br>
-            <input type="text" class="text-center" placeholder="comment" style="width: 375px; height:100px;">
-            <br><br>
-            <input type="submit" name="submit" value="Contact Investor" style="padding-left:8%; padding-right:8%" class="btn btn-primary btn-lg"><br>
+              <input type="text" name="user" class="form-control" id="user"></div>
+              </div>  <br>
+              <div class="form group row">
+              <div class="col-sm-1">
+                <label>Email:</label></div>
+                <div class="col-sm-2">
+                <input type="text" name="user" class="form-control" id="user"></div>
+                </div>  <br>
+                <div class="form group row">
+                <div class="col-sm-1">
+                  <label>Company:</label></div>
+                  <div class="col-sm-2">
+                  <input type="text" name="user" class="form-control" id="user"></div>
+                  </div>  <br>
+
+                    <div class="form group row">
+                    <div class="col-sm-1">
+                      <label>Profile Type:</label></div>
+                      <div class="col-sm-2">
+                      <input type="text" name="user" class="form-control" id="user"></div>
+                      </div>  <br>
+                      <input type="text" class="text-center" placeholder="comment" style="width: 325px; height:100px;">
+                      <br><br>
+                      <input type="submit" name="submit" value="Contact Mentors" style="padding-left:8%; padding-right:10%;" class="btn btn-primary btn-lg text-center"><br>
+
+
           </div>
         </div>
       </div>
