@@ -1,0 +1,36 @@
+body,html{
+    height: 100%;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  .bg {
+
+    background-image: url("http://www.foglers.com/system/images/333/original/commercial_realestate.jpg?1366064092");
+    height: 100%; 
+  
+    background-position: left;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+
+  #id1{
+    padding: 5%; 
+    background-color:rgb(255,77,77,0.3); 
+    opacity: 5; 
+    border-radius: 10px
+  }
+
+  .btn{
+      background-color: rgba(62, 44, 226, 0.5);
+      padding: 3%;
+      color: blue;
+      width: 100%;
+      display: block;
+      cursor: pointer;
+    text-align: center;
+  }
+.container{
+    padding-left: 0%;
+    padding-right: 0%;
+}
