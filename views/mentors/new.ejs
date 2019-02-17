@@ -8,155 +8,142 @@
 
   </div>
   <div class="col-lg-12 m-auto d-block">
-        <h4><u>Confidential Informtion</u></h4></br>
-        <form class="bg-light" onsubmit="return validation()">
-          <div class="form-group row">
+  <h4>
+    <u>Confidential Informtion</u>
+  </h4></br>
+  <form class="bg-light" onsubmit="return validation()">
+    <div class="form-group row">
 
-            <div class="col-sm-3">
-              <label>Your Name<font color="red">*</font> :</label>
-            </div>
-            <div class="col-sm-4">
-              <input type="text" name="name" class="form-control" id="name">
-              <span id="Name" class="text-danger"></span>
-                      </div>
-                      </div>
-                      <div class="form-group row">
-
-                              <div class="col-sm-3">
-                                <label>Mobile Number:<font color="red">*</font> :</label>
-                              </div>
-                              <div class="col-sm-4">
-                                <input type="text" name="mobile" class="form-control" id="mobile">
-                                <span id="Mobile" class="text-danger"></span>
-                                        </div>
-                              </div>
-                              <div class="form-group row">
-
-                                      <div class="col-sm-3">
-                                        <labe>Email Id:<font color="red">*</font> :</label>
-                                      </div>
-                                      <div class="col-sm-4">
-                                        <input type="text" name="mail" class="form-control" id="email">
-                                        <span id="mail" class="text-danger"></span>
-                                                </div>
-                                              </div>
-
-                                              <div class="form-group row">
-
-                                                      <div class="col-sm-3">
-                                                        <label>Location:<font color="red">*</font> :</label>
-                                                      </div>
-                                                      <div class="col-sm-4">
-                                                        <input type="text" name="loc" class="form-control" id="location">
-                                                        <span id="loc" class="text-danger"></span>
-                                                                </div>
-                                                      </div>
-                                                      <h4><u>Advertisement Details:</u></h4></br>
-                                                      <div class="form-group row">
-
-                                                              <div class="col-sm-3">
-                                                                <label>Advertisement Headline:<font color="red">*</font> :</label>
-                                                              </div>
-                                                              <div class="col-sm-4">
-                                                                <input type="text" name="company" class="form-control" id="company">
-                                                                <span id="loc" class="text-danger"></span>
-                                                                        </div>
-                                                              </div>
-                                                      <div class="form-group row">
-                            <div class="col-sm-3">
-                                  <label for="intro">Introduction:</label>
-                                  </div>
-                                  <div class="col-sm-4">
-                                  <textarea class="form-control" name="intro" id="intro" rows="3"></textarea>
-                                </div>
-                                </div>
-                                <h4><u>Profile details:</u></h4></br>
-                                <div class="form-group row">
-
-                                  <div class="col-sm-3">
-                                    <label>Occupation:<font color="red">*</font> :</label>
-                                  </div>
-                                  <div class="col-sm-4">
-
-                                    <select class="form-control ng-pristine ng-invalid ng-touched" id="occupation" name="occup" ngmodel="" required="">
-                                                                                <option disabled="" hidden="" selected="" value="">Select Occupation</option>
-                                                                                <!----><option value="2">Corporate Professional</option><option value="1">Educational Professsional</option>
-                                                                            </select>
-                                    <span id="occu" class="text-danger"></span>
-                                            </div>
-                                              </div>
-                                              <div class="form-group row">
-
-                                                      <div class="col-sm-3">
-                                                        <labe>Company Name:<font color="red">*</font> :</label>
-                                                      </div>
-                                                      <div class="col-sm-4">
-                                                        <input type="text" name="com" class="form-control" id="mobile">
-                                                        <span id="Mobile" class="text-danger"></span>
-                                                                </div>
-                                                      </div>
-                                                      <div class="form-group row">
-
-                                                              <div class="col-sm-3">
-                                                                <labe>Designation:<font color="red">*</font> :</label>
-                                                              </div>
-                                                              <div class="col-sm-4">
-                                                                <input type="text" name="mobile" class="form-control" id="mobile">
-                                                                <span id="Mobile" class="text-danger"></span>
-                                                                        </div>
-                                                              </div>
-                                                              <div class="form-group row">
-
-                                                                      <div class="col-sm-3">
-                                                                        <labe>Professional Experiance :<font color="red">*</font> :</label>
-                                                                      </div>
-                                                                      <div class="col-sm-4">
-                                                                        <input type="text" name="mobile" class="form-control" id="mobile">
-                                                                        <span id="Mobile" class="text-danger"></span>
-                                                                                </div>
-                                                                      </div>
-                                                                      <div class="form-group row">
-
-                                                                              <div class="col-sm-3">
-                                                                                 <label>Subject Expertise:<font color="red">*</font> :</label>
-                                                                              </div>
-                                                                              <div class="col-sm-4">
-                                                                                <input type="text" name="mobile" class="form-control" id="mobile">
-                                                                                <span id="Mobile" class="text-danger"></span>
-                                                                                        </div>
-                                                                              </div>
-                                                                               <div class="form-group row">
-
-                                                                                      <div class="col-sm-3">
-                                                                                        <label>Sector Prefrences:<font color="red">*</font> :</label>
-                                                                                       </div>
-                                                                                      <div class="col-sm-4">
-                                                                                        <input type="text" name="mobile" class="form-control" id="mobile">
-                                                                                        <span id="Mobile" class="text-danger"></span>
-                                                                                                </div>
-                                                                                      </div>
-                                                                                      <label class="col-sm-4">Upload image:<font color="red">*</font> :</label>
-                                                                                      <input class="col-sm-" type="file" class="form-control image-preview-filename"  placeholder="Accepted formats - png, jpeg, gif" type="text"><br>
-                                                                                      <div class="form-group row">
-
-                                                                                              <div class="col-sm-3">
-                                                                                                <label>linkdin Profile :<font color="red">*</font> :</label>
-                                                                                              </div>
-                                                                                              <div class="col-sm-4">
-                                                                                                <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Enter URL">
-                                                                                                <span id="Mobile" class="text-danger"></span>
-                                                                                                        </div>
-                                                                                                        </div>
-                                                                                                        <div class="terms text-center">By Clicking Submit you are Accepting
-                                                                                                          <a routerlink="/terms" href="tems.html">Terms &amp; Conditions</a>
-
-
-                                                                                                        </div></br>
-                                                                                <div class="container">
-
-                                                                                <input type="submit" name="submit" value="submit" class="btn btn-primary center-block btn-lg" id="singlebutton">
-                                                                                </div>
-</div>
+      <div class="col-sm-3">
+        <label>Your Name<font color="red">*</font> :</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="text" name="name" class="form-control" id="name">
+        <span id="Name" class="text-danger"></span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-3">
+        <label>Mobile Number:<font color="red">*</font> :</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="text" name="mobile" class="form-control" id="mobile">
+        <span id="Mobile" class="text-danger"></span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-3">
+        <labe>Email Id:<font color="red">*</font> :</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="text" name="mail" class="form-control" id="email">
+        <span id="mail" class="text-danger"></span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-3">
+        <label>Location:<font color="red">*</font> :</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="text" name="loc" class="form-control" id="location">
+        <span id="loc" class="text-danger"></span>
+      </div>
+    </div>
+    <h4><u>Advertisement Details:</u></h4></br>
+    <div class="form-group row">
+      <div class="col-sm-3">
+        <label>Advertisement Headline:<font color="red">*</font> :</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="text" name="company" class="form-control" id="company">
+        <span id="loc" class="text-danger"></span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-3">
+        <label for="intro">Introduction:</label>
+      </div>
+      <div class="col-sm-4">
+        <textarea class="form-control" name="intro" id="intro" rows="3"></textarea>
+      </div>
+    </div>
+    <h4><u>Profile details:</u></h4></br>
+      <div class="form-group row">
+        <div class="col-sm-3">
+          <label>Occupation:<font color="red">*</font> :</label>
+        </div>
+        <div class="col-sm-4">
+          <select class="form-control ng-pristine ng-invalid ng-touched" id="occupation" name="occup" ngmodel="" required="">
+              <option disabled="" hidden="" selected="" value="">Select Occupation</option>
+              <!----><option value="Corporate Professional">Corporate Professional</option>
+                    <option value="Educational Professsional">Educational Professsional</option>
+          </select>
+          <span id="occu" class="text-danger"></span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">
+          <labe>Company Name:<font color="red">*</font> :</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" name="com" class="form-control" id="mobile">
+          <span id="Mobile" class="text-danger"></span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">
+          <labe>Designation:<font color="red">*</font> :</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" name="designation" class="form-control" id="designation">
+          <span id="designation" class="text-danger"></span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">
+          <labe>Professional Summary :<font color="red">*</font> :</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" name="prof_exp" class="form-control" id="prof_exp">
+          <span id="prof_exp" class="text-danger"></span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">
+            <label>Subject Expertise:<font color="red">*</font> :</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" name="sub_expertise" class="form-control" id="sub_expertise">
+          <span id="sub_expertise" class="text-danger"></span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">
+          <label>Sector Prefrences:<font color="red">*</font> :</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" name="sector_pref" class="form-control" id="sector_pref">
+            <span id="sector_pref" class="text-danger"></span>
+        </div>
+      </div>
+      <label class="col-sm-4">Upload image:<font color="red">*</font> :</label>
+      <input class="col-sm-" type="file" class="form-control image-preview-filename"  placeholder="Accepted formats - png, jpeg, gif" type="text"><br>
+      <div class="form-group row">
+        <div class="col-sm-3">
+          <label>linkdin Profile :<font color="red">*</font> :</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" name="linkedin" class="form-control" id="linkedin" placeholder="Enter URL">
+          <span id="linkedin" class="text-danger"></span>
+        </div>
+      </div>
+      <div class="terms text-center">By Clicking Submit you are Accepting
+        <a routerlink="/terms" href="tems.html">Terms &amp; Conditions</a>
+      </div></br>
+      <div class="container">
+        <input type="submit" name="submit" value="submit" class="btn btn-primary center-block btn-lg" id="singlebutton">
+      </div>
+    </div>
 
 
 
