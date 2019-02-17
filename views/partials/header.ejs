@@ -50,6 +50,29 @@
 
                       </ul>
                   </div>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="nav navbar-nav navbar-right">
+                            <% if(!currentUser){ %>
+                                <li class="nav-item">
+                                        <a class="nav-link js-scroll-trigger" href="/login" style="font-size: 18px;color: #737373"> LOGIN</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link js-scroll-trigger" href="/register" style="font-size: 18px;color: #737373"> SIGNUP</a>
+                                </li>
+                                
+                                
+                            <% }else{ %>
+                                <li class="nav-item">
+                                        <a class="nav-link js-scroll-trigger" href="#" style="font-size: 18px;color: #737373">Signed In As <%= currentUser.username %></a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link js-scroll-trigger" href="/logout" style="font-size: 18px;color: #737373"> LOGOUT</a>
+                                </li>
+                                <!-- <li><a href="#">Signed In As <%= currentUser.username %></a></li> -->
+                                <!-- <li><a href="/logout">LogOut</a></li> -->
+                            <% } %>
+                        </ul>
+                    </div>
               </div>
           </nav>
       </div>
