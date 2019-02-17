@@ -4,19 +4,37 @@
     <h2><b>Interested to invest in businesses like wellness, travel, IT or electronic</b></h2><br>
     <div class="row" style="border:3px black solid; padding:5%; box-shadow: 10px 10px 8px #888888;">
       <div class="col-sm-7">
-        <div class="shrt-desc tp-border Platinum">
+        <!-- <div class="shrt-desc tp-border Platinum">
           <div class="investor-tag" >
             <img src="https://i.ytimg.com/vi/xgULq4ZmXg8/maxresdefault.jpg" alt="Investor-Tag" style="width:100px;height:40px;">
           </div>
-        </div>
+        </div> -->
         <h4><b>Name, Mobile, Company Logo, Profile Picture, Email</b></h4>
-        <p>(Available after Interaction)</p><br>
-        <h4><b>college/Company Name:</b></h4><br>
-        <h4><b>Designation/Title :</b></h4><br>
-        <h4><b>Professional summary :</b></h4><br>
-        <h4><b>Professonal summary :</b></h4><br>
-        <h4><b> Subject Expertise:</b></h4><br>
-        <h4><b> Subject Expertise:</b></h4><br>
+        <p><i class="fas fa-lock" style="color: blue"></i> Available after Interaction</p><br>
+        <h4>
+          <b>
+            Company Name : 
+          </b>
+          <%= mentor.com %>  |  <i class="fa fa-map-marker" style="color: blue"></i> <%= mentor.loc %>, India
+        </h4><br>
+        <h4>
+          <b>Designation :</b> <%= mentor.designation %>
+        </h4><br>
+        <h4>
+          <b>Professional summary :</b><br>
+          <%= mentor.prof_sum %>
+        </h4><br>
+        <h4>
+          <b>Professonal Experience :</b><%= mentor.prof_sub %> | <%= mentor.prof_exp %> Years
+        </h4><br>
+        <h4>
+          <b> Subject Expertise:</b><br>
+          <%= mentor.sub_expertise %>
+        </h4><br>
+        <h4>
+          <b>Sector Prefference:</b><br>
+          <%= mentor.sector_pref %>
+        </h4><br>
 
       </div>
       <div class="col-sm-5" style="background-color:lavenderblush;">

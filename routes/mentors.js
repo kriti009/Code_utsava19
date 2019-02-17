@@ -27,6 +27,8 @@ router.post("/mentors/new",function(req, res){
     occup: req.body.occup,
     com : req.body.com,
     designation: req.body.designation,
+    prof_sum : req.body.prof_sum,
+    prof_sub: req.body.prof_sub,
     prof_exp: req.body.prof_exp,
     sub_expertise: req.body.sub_expertise,
     sector_pref: req.body.sector_pref,
